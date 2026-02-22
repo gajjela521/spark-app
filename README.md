@@ -25,11 +25,9 @@ Spark is a text-only, image-supported mobile dating and social app.
    go run cmd/api/main.go
    ```
 
-4. Run Flutter App:
+4. Run Flutter App (Single Command with all dependencies):
    ```bash
-   cd flutter_app
-   flutter pub get
-   flutter run
+   cd flutter_app && flutter clean && flutter pub get && cd ios && pod install --repo-update && cd .. && flutter run
    ```
 
 ## Deploying

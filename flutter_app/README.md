@@ -7,6 +7,12 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
+## Running Locally (Including Dependencies)
+
+To fetch all dependencies (Flutter + iOS), clean build caches, update native iOS pods, and run the simulator in a single command, open the terminal in the root `Mobile_app` folder and run:
+   ```bash
+   cd flutter_app && flutter clean && flutter pub get && cd ios && pod install --repo-update && cd .. && open -a Simulator && flutter run
+   ```
 
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
 - [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
