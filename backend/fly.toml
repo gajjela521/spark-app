@@ -1,4 +1,4 @@
-app = "spark-api"
+app = "spark-api-suryateja"
 primary_region = "sin"
 
 [build]
