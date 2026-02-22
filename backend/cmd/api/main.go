@@ -26,6 +26,15 @@ func main() {
 		port = "8080"
 	}
 
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{
+			"app": "Spark API",
+			"status": "online",
+			"version": "1.0.0",
+		})
+	})
+
+
 	router.GET("/v1/discover", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"message": "Welcome to Spark API"})
 	})
